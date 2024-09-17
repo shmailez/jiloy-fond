@@ -1,0 +1,58 @@
+@import './base.css';
+
+header {
+  width: 30%;
+  /* display: grid;
+  grid-template-columns: 1fr; */
+  padding: 0;
+  /* background-color: #f9f9f9; */
+  border-right: 1px solid #e0e0e0;
+  height: 100vh;
+  /* min-height: 100vh; */
+  overflow: hidden;
+  scroll-behavior: auto;
+}
+
+main {
+  width: 70%;
+  /* display: grid;
+  grid-template-columns: auto; */
+  padding: 20px;
+  /* background-color: #f9f9f9; */
+  border-right: 1px solid #e0e0e0;
+}
+
+#app {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  display: flex;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* padding: 2rem; */
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+.user {
+  /* background-color: #ffffff;
+  color: #000; */
+  /* display: grid; */
+  /* grid-template-columns: 1fr; */
+  /* display: grid;
+  width: 100%; */
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+

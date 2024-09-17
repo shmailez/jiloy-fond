@@ -1,0 +1,87 @@
+/* Основной контейнер */
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Левая колонка - поиск сотрудников */
+  .sidebar {
+    width: 30%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  /* Контентная часть */
+  .main-content {
+    width: 70%;
+    padding: 20px;
+  }
+  
+  .result-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .result-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .result-item.active {
+    background-color: #e0e0e0;
+  }
+  
+  /* Адаптивность для мобильных устройств */
+  @media (max-width: 768px) {
+    .wrapper {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+      border-right: none;
+      border-bottom: 1px solid #e0e0e0;
+    }
+  
+    .main-content {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .result-item img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sidebar {
+      padding: 5px;
+    }
+  
+    .main-content {
+      padding: 5px;
+    }
+  
+    .result-item {
+      padding: 5px;
+    }
+  
+    .result-item img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
